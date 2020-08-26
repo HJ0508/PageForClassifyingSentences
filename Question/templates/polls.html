@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문장분류</title>
+    <style>
+        .main-title {
+            font-size: 150%;
+            margin-right: 48%;
+            text-align: center; }
+        .sentence {font-size: 1.3rem;}
+        .answer {font-size: 0.8rem}
+        .sentence {font-size: 110%}
+        .container {
+            width: 50%;
+            height: auto;
+            padding: 1%;
+            margin: 0% ;
+            text-align: center;}
+        .sub-container input{margin-left: 5%;}
+        .sub-container label{margin-right: 5%;}
+        .submit { font-size: 1rem; margin-right: 48%; float: right;}
+    </style>
+</head>
+<body>
+    <p class="main-title"><strong>문장 분류</strong></p>
+
+    <form method="POST">
+        <fieldset class="container">
+            <p class="sentence">학교에서 탈출하고싶다.</p>
+            <div class="question1">
+                <fieldset class="sub-container">
+                    <legend>긍정/부정</legend>
+                    <input class="answer" id="id1" type="radio" name="group1" value="1"><label for="id1">긍정</label>
+                    <input class="answer" id="id1" type="radio" name="group1" value="2"><label for="id1">중립</label>
+                    <input class="answer" id="id1" type="radio" name="group1" value="0"><label for="id1">부정</label>
+                </fieldset>
+            </div>
+            <div class="question2">
+                <fieldset class="sub-container">
+                    <legend>활동/비활동</legend>
+                    <input class="answer" id="id2" type="radio" name="group2" value="1"><label for="id2">긍정</label>
+                    <input class="answer" id="id2" type="radio" name="group2" value="2"><label for="id2">중립</label>
+                    <input class="answer" id="id2" type="radio" name="group2" value="0"><label for="id2">부정</label>
+                </fieldset>
+            </div>
+        </fieldset>
+        <input class="submit" type="submit" value="다음 ▶">
+    </form>
+</body>
+</html>
